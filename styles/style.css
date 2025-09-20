@@ -19,14 +19,17 @@ header {
 }
 .address {
   grid-area: address;
-  justify-self: end;
-  max-height: 98px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 6px;
 }
 .header__menu-list {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 11px;
 }
 
 .header__menu-item_active .header__menu-link {
@@ -49,7 +52,7 @@ header {
 }
 .header__logo {
   display: block;
-  width: 148px;
+  width: 140px;
 }
 .header__logo-image {
   width: 100%;
@@ -65,10 +68,11 @@ header {
 .header__address-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1px;
   align-items: flex-start;
   padding-left: 184px;
   list-style: none;
+  line-height: 24px;
 }
 
 .cover {
@@ -98,12 +102,16 @@ header {
   font-style: Bold;
   font-size: 100px;
   color: rgba(255, 255, 255, 1);
-  line-height: 130%;
-  letter-spacing: 25px;
+  line-height: 132%;
+  letter-spacing: 31px;
   text-transform: uppercase;
   z-index: 50;
   position: relative;
 }
+.fix_letter {
+  letter-spacing: 0px;
+}
+
 .accent-span {
   display: block;
 }
@@ -121,6 +129,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-right: 50px;
+  margin-top: -7px;
 }
 .description-text {
   font-family: Raleway, sans-serif;
@@ -128,8 +137,8 @@ header {
   font-style: Regular;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 20px;
-  letter-spacing: 1px;
+  word-spacing: 18px;
+  letter-spacing: 0px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   padding-left: 50px;
@@ -152,6 +161,8 @@ header {
   width: 100%;
   min-height: 723px;
   margin-bottom: 120px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .lots__card-list {
   display: flex;
@@ -238,7 +249,14 @@ header {
   z-index: 2;
 }
 .lots__more-inforamtion {
-  margin-left: 64px;
+  margin-left: 40px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 .about__auction {
   width: 100%;
@@ -335,6 +353,13 @@ header {
   gap: 1px;
   align-items: flex-start;
   list-style: none;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+
+  line-height: 23px;
+  letter-spacing: 10%;
 }
 .footer__address-underline {
   text-decoration: none;
