@@ -27,7 +27,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 11px;
-  list-style: none; 
+  list-style: none;
 }
 
 .header__menu-item_active .header__menu-link {
