@@ -14,9 +14,7 @@ header {
 .header__menu {
   grid-area: navigation;
 }
-.header__logo {
-  grid-area: logo;
-}
+
 .address {
   grid-area: address;
   padding-left: 6px;
@@ -51,6 +49,7 @@ header {
   list-style: none;
 }
 .header__logo {
+  grid-area: logo;
   display: block;
   width: 140px;
 }
@@ -105,7 +104,6 @@ header {
   font-style: Bold;
   line-height: 132%;
   letter-spacing: 31px;
-  text-transform: uppercase;
   text-transform: uppercase;
 }
 .fix_letter {
