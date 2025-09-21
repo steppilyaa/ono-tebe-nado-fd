@@ -308,7 +308,7 @@ header {
   line-height: 24px;
   letter-spacing: 0%;
 }
-.about__info-paragraphs { 
+.about__info-paragraphs {
   display: flex;
   flex-direction: column;
   grid-area: about__info;
