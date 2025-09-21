@@ -3,7 +3,8 @@ header {
   grid-template-columns: 1fr min-content 1fr;
   grid-template-areas: "navigation logo address";
   align-items: center;
-  height: 293px;
+  margin-top: 88px;
+  margin-bottom: 86px;
   padding-right: 50px;
   padding-left: 50px;
   font-family: Raleway, sans-serif;
@@ -15,14 +16,32 @@ header {
   grid-area: navigation;
 }
 
-.address {
-  grid-area: address;
-  padding-left: 6px;
 
-  font-family: Raleway, sans-serif;
+.header__address-list {
+  padding-left: 184px;
+}
+
+
+.address-list {
+  grid-area: address;
+  font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  letter-spacing: 10%;
+   line-height: 24px;
+   list-style: none;
 }
+.address-underline {
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
 .header__menu-list {
   display: flex;
   flex-direction: row;
@@ -64,44 +83,30 @@ header {
   vertical-align: middle;
   font-size: 1em;
 }
-.header__address-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1px;
-  padding-left: 184px;
-  line-height: 24px;
-  list-style: none;
-}
+
 
 .cover {
   position: relative;
   display: block;
   width: 100%;
   min-height: 758px;
-  margin-bottom: 180px;
+  margin-bottom: 189px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.header__address-underline {
-  border-bottom: 1px solid;
-  padding-bottom: 1px;
-  text-decoration: none;
-}
-
 .cover-heading {
   position: relative;
   z-index: 50;
   width: 100%;
-  padding: 165px 50px 106px 50px;
+  padding: 165px 50px 100px 50px;
   color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 100px;
-  font-style: Bold;
+  font-style: normal;
   line-height: 132%;
   letter-spacing: 31px;
   text-transform: uppercase;
@@ -113,10 +118,10 @@ header {
 .accent-span {
   display: block;
 }
-.cover-heading__second-word {
+.aligned-text_middle {
   text-align: center;
 }
-.cover-heading__third-word {
+.aligned-text_right {
   text-align: right;
 }
 .description {
@@ -126,7 +131,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: -7px;
   padding-right: 50px;
 }
 .description-text {
@@ -135,7 +139,7 @@ header {
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 22px;
-  font-style: Regular;
+  font-style: normal;
   line-height: 28px;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -145,10 +149,10 @@ header {
   border: 1px solid rgba(255, 255, 255, 1);
   padding: 12px 32px;
   color: rgba(255, 255, 255, 1);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
-  font-style: Medium;
+  font-style: normal;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -157,8 +161,7 @@ header {
 }
 .lots {
   width: 100%;
-  min-height: 723px;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -175,7 +178,7 @@ header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  font-style: Bold;
+  font-style: normal;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -206,8 +209,7 @@ header {
 }
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -229,7 +231,7 @@ header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 22px;
-  font-style: Bold;
+  font-style: normal;
   line-height: 120%;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -238,20 +240,20 @@ header {
 }
 .lots__card-description {
   z-index: 2;
-  border-bottom: none !important;
+  border-bottom: none;
   color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .lots__more-inforamtion {
   margin-left: 40px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  font-style: Regular;
+  font-style: normal;
 
   line-height: 100%;
   letter-spacing: 0%;
@@ -259,14 +261,15 @@ header {
 .about__auction {
   display: grid;
   grid-template-columns: 334px auto;
-  grid-template-rows: 310px auto;
+  grid-template-rows:auto;
   grid-template-areas:
     "logo-auction about__title"
     ". about__info";
   column-gap: 25px;
   width: 100%;
-  min-height: 595px;
+  /* min-height: 595px; */
   margin-bottom: 180px;
+  padding-top: 37px;
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -291,25 +294,23 @@ header {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  font-style: Bold;
+  font-style: normal;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
 
-.about__info {
-  grid-area: about__info;
-  margin-top: -28px; /*расположение текста относительно лого, как в макете*/
-}
 .about__text {
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  font-style: Regular;
+  font-style: normal;
   line-height: 24px;
   letter-spacing: 0%;
 }
 .about__info-paragraphs {
+  grid-area: about__info;
+  margin-top: 5px; 
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -317,10 +318,9 @@ header {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 180px;
-  min-height: 180px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-bottom: 82px;
 }
 .footer__menu-list {
   display: flex;
@@ -345,25 +345,7 @@ header {
 
   text-decoration: none;
 }
-.footer__address-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1px;
-  font-family: Raleway;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: Regular;
 
-  line-height: 23px;
-  letter-spacing: 10%;
-  list-style: none;
-}
-.footer__address-underline {
-  border-bottom: 1px solid;
-  padding-bottom: 1px;
-  text-decoration: none;
-}
 .footer__social-icon {
   width: 48px;
   height: 48px;
