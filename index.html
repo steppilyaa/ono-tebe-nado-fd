@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active no-marker">
+          <li class="header__menu-item header__menu-item_active no-marker item-not-styled">
             <a href="#0" class="header__menu-link">главная</a>
           </li>
-          <li class="thin-circle"></li>
-          <li class="header__menu-item">
+          <li class="header__menu-item item-styled">
             <a href="#0" class="header__menu-link">посмотреть лоты</a>
           </li>
-          <li class="thin-circle"></li>
-          <li class="header__menu-item">
+          <li class="header__menu-item item-styled">
             <a href="#0" class="header__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header__logo"
-        ><img
-          src="./images/logo-black.svg"
-          class="header__logo-image"
-          alt="логотип проекта светлый"
-      /></a>
+      <a class="header__logo">
+      <img src="./images/logo-black.svg" class="header__logo-image" alt="логотип проекта светлый">
+      </a>
       <address>
         <ul class="address-list header__address-list">
           <li class="address-list-item">
-            <a class="address-underline" href="tel:+99995555555"
-              >+9 999 555 5555</a
-            >
+            <a class="address-underline" href="tel:+99995555555">
+            +9 999 555 5555
+            </a
+              >
           </li>
           <li class="address-list-item">
-            <a class="address-underline" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
+            <a class="address-underline" href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+            </a
+              >
           </li>
           <li class="address-list-item">
             наб. Принсенграхт 263-
-              265, Амстердам
+            265, Амстердам
           </li>
         </ul>
       </address>
@@ -56,16 +53,12 @@
         <div class="overlay"></div>
         <h1 class="cover-heading">
           <span class="accent-span aligned-text_left">оно</span>
-          <span class="accent-span aligned-text_middle"
-            >теб<span class="fix_letter">е</span></span
-          >
-          <span class="accent-span aligned-text_right"
-            >над<span class="fix_letter">о</span></span
-          >
+          <span class="accent-span aligned-text_middle">теб<span class="fix_letter">е</span></span>
+          <span class="accent-span aligned-text_right">над<span class="fix_letter">о</span></span>
         </h1>
         <div class="description">
           <p class="description-text">
-              Аукцион вещей, в которые никто не верил
+            Аукцион вещей, в которые никто не верил
           </p>
           <button class="bet__button">Сделать ставку</button>
         </div>
@@ -123,61 +116,53 @@
             </a>
           </li>
         </ul>
-        <a href="#0" class="header__menu-link lots__more-inforamtion"
-          >посмотреть больше</a
-        >
+        <a href="#0" class="header__menu-link lots__more-inforamtion">
+        посмотреть больше
+        </a>
       </section>
       <section class="about__auction">
         <div class="about__auction__pic">
           <div class="about__auction__logo-background">
-            <img
-              class="about__img"
-              src="./images/logo-white.svg"
-              alt="белый логотип"
-            />
+            <img class="about__img" src="./images/logo-white.svg" alt="белый логотип">
           </div>
         </div>
         <h2 class="about__title">Об аукционе</h2>
-        
-          <div class="about__info-paragraphs">
-            <p class="about__text">
-              Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
-            </p>
-            <p class="about__text">
-              Слишком сложные или, наоборот, слишком простые. Опережающие своё
-              время. В пух и прах растерзанные критиками. Непринятые и
-              непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих
-              лотов невозможно представить современную культуру. Когда в эти
-              вещи не верил никто, продолжали верить их создатели. И сейчас эти
-              лоты стали культовыми.
-            </p>
-          </div>
-        
+        <div class="about__info-paragraphs">
+          <p class="about__text">
+            Здесь вы не встретите очередное пафосное собрание невероятно
+            дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+            на один аукцион. Потому что кому нужен дневник девочки-подростка
+            или картина, которую может нарисовать даже ребёнок? Кому нужны все
+            эти странные вещи, созданные любителями?
+          </p>
+          <p class="about__text">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё
+            время. В пух и прах растерзанные критиками. Непринятые и
+            непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих
+            лотов невозможно представить современную культуру. Когда в эти
+            вещи не верил никто, продолжали верить их создатели. И сейчас эти
+            лоты стали культовыми.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <address>
         <ul class="address-list">
           <li class="address-list-item">
-            <a class="address-underline" href="tel:+99995555555"
-              >+9 999 555 5555</a
-            >
+            <a class="address-underline" href="tel:+99995555555">
+            +9 999 555 5555
+            </a>
           </li>
           <li class="address-list-item">
-            <a class="address-underline" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
+            <a class="address-underline" href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+            </a>
           </li>
           <li class="address-list-item">
-            
-              наб. Принсенграхт 263- 265,
-              Амстердам
-            
+            наб. Принсенграхт 263- 265,
+            Амстердам
           </li>
         </ul>
       </address>
@@ -186,37 +171,31 @@
           <li class="footer__menu-item footer__menu-item_active no-marker">
             <a href="#0" class="footer__menu-link">главная</a>
           </li>
-
           <li class="footer__menu-item">
             <a href="#0" class="footer__menu-link">посмотреть лоты</a>
           </li>
-
           <li class="footer__menu-item">
             <a href="#0" class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
-        <ul class="footer__social-list">
-          <li class="footer__social-list-item">
-            <a href="#0" class="footer__social-link">
-              <img src="./images/yt.svg" class="footer__social-icon" alt="yt" />
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#0" class="footer__social-link">
-              <img src="./images/vk.svg" class="footer__social-icon" alt="vk" />
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#0" class="footer__social-link">
-              <img
-                src="./images/pinterest.svg"
-                class="footer__social-icon"
-                alt="pinterest"
-              />
-            </a>
-          </li>
-        </ul>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+          <img src="./images/yt.svg" class="footer__social-icon" alt="yt">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+          <img src="./images/vk.svg" class="footer__social-icon" alt="vk">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+          <img src="./images/pinterest.svg" class="footer__social-icon" alt="pinterest">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

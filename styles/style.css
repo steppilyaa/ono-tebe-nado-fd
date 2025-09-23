@@ -1,4 +1,4 @@
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-areas: "navigation logo address";
@@ -18,7 +18,7 @@ header {
 
 
 .header__address-list {
-  padding-left: 184px;
+  padding-left: 189px;
 }
 
 
@@ -27,13 +27,12 @@ header {
   flex-direction: column;
   grid-area: address;
   align-items: flex-start;
-  gap: 1px;
-  font-family: Raleway;
+  gap: 0px;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
    line-height: 24px;
-  letter-spacing: 10%;
    list-style: none;
 }
 .address-underline {
@@ -45,7 +44,7 @@ header {
 .header__menu-list {
   display: flex;
   flex-direction: row;
-  gap: 11px;
+  gap: 33px;
   list-style: none;
 }
 
@@ -53,7 +52,12 @@ header {
   border-bottom: 0;
   text-decoration: none;
 }
-
+.item-styled {
+  list-style-type: circle;
+}
+.item-not-styled {
+  list-style: none;
+}
 .header__menu-link {
   border-bottom: 1px solid;
   padding-bottom: 1px;
@@ -75,15 +79,6 @@ header {
 .header__logo-image {
   width: 100%;
 }
-
-/* Тонкий кастомный кружок */
-.thin-circle::before {
-  content: "○";
-  margin-right: 0px;
-  vertical-align: middle;
-  font-size: 1em;
-}
-
 
 .cover {
   position: relative;
@@ -154,7 +149,6 @@ header {
   font-size: 22px;
   font-style: normal;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
   background: transparent;
@@ -180,7 +174,6 @@ header {
   font-size: 40px;
   font-style: normal;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 .lots__card-list-item {
@@ -254,9 +247,7 @@ header {
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
-
   line-height: 100%;
-  letter-spacing: 0%;
 }
 .about__auction {
   display: grid;
@@ -267,7 +258,6 @@ header {
     ". about__info";
   column-gap: 25px;
   width: 100%;
-  /* min-height: 595px; */
   margin-bottom: 180px;
   padding-top: 37px;
   padding-right: 24px;
@@ -296,7 +286,6 @@ header {
   font-size: 40px;
   font-style: normal;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 
@@ -306,7 +295,6 @@ header {
   font-size: 20px;
   font-style: normal;
   line-height: 24px;
-  letter-spacing: 0%;
 }
 .about__info-paragraphs {
   display: flex;
@@ -340,8 +328,6 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
-
   text-decoration: none;
 }
 .footer__social-icon {
